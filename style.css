@@ -1,0 +1,194 @@
+﻿html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family:verdana, sans-serif;
+	color:rgba(51,51,51,0.7);
+	background:rgb(250,250,250);
+} 
+.container {
+	position:relative;
+	box-sizing:border-box;
+	width:100%;
+	margin:0;
+	padding:0;
+	padding-bottom:40px;
+	min-height:100%;
+}
+.logo {
+	position:relative;
+	border-bottom:1px solid rgba(51,51,51,0.4);
+}
+	h1 {
+		margin:0;
+		padding:30px 0px 30px 5%;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		font-weight:normal;
+		font-size:25px;
+	}
+	h1 span {
+		color: #fa5b3c;
+	}
+	.logo a {
+		position:absolute;
+		right:5%;
+		bottom:28px;
+		margin:0;
+		padding:0;
+		color:rgba(51,51,51,0.7);
+		text-decoration:none;
+		font-size:15px;
+	}
+.layout {
+	box-sizing:border-box;
+	position:relative;
+	margin:50px 5% 53px 5%;
+	padding:10px;
+	width:90%;
+	background:#eee;
+}
+	.main {
+		display:inline-block;
+		box-sizing:border-box;
+		position:relative;
+		padding: 10px 30px 10px 30px;
+		width:35%;
+		height:385px;
+		background:#fff;
+	}
+	#city {
+		margin:0;
+		text-align:center;
+		font-weight:normal;
+	}
+	.currentDay,.currentDate {
+		text-align:center;
+		padding:0;
+		margin:0;
+		font-size:15px;
+	}
+	.currentTemperature {
+		color:#fa5b3c;
+		font-size:30px;
+		font-weight:bold;
+		margin:55px 0 35px 0;
+	}
+	.main .temperatureMin0,.main .temperatureMax0 {
+		font-size:15px;
+		margin:5px 0 0 0;
+	}
+	.right {
+		position:absolute;
+		top:100px;
+		right:30px;
+		text-align: center;
+		font-size: 11px;
+		text-transform: uppercase;
+		color: rgba(51,51,51,0.7);
+	}
+	.right p {
+		padding-top:25px;
+	}
+	.additional0 {
+		margin-top:40px;
+		background:rgb(250,250,250);
+	}
+		.additional {
+			display:inline-block;
+			margin-right:-5px;
+			width:33%;
+			padding-top:10px;
+			font-size:11px;
+			border-right:1px solid rgba(51,51,51,0.7);
+			text-align:center;
+			text-transform:uppercase;
+			letter-spacing:1px;
+		}
+		.wind {border-right:none; margin-right:0; width: 32%;}
+	.week {
+		display: inline-block;
+		box-sizing:border-box;
+		position: relative;
+		width:64%;
+		height: 385px;
+		vertical-align: top;
+		padding-left:7%;
+		padding-right:5%;
+	}
+		.week1,.week2 {margin:0;}
+		.week1 {
+			margin-bottom: 10px;
+		}
+			.current0,.current1,.current2,.current3,.current4,.current5,.current6,.current7 {
+				display: inline-block;
+				box-sizing: border-box;
+				height: 187px;
+				background: rgb(250,250,250);
+				font-size:11px;
+				text-transform: uppercase;
+				padding: 0;
+				padding-left: 10px;
+				padding-top:10px;
+				border-right: 10px solid #eee;
+			}
+			.current0:hover,.current1:hover,.current2:hover,.current3:hover,.current4:hover,.current5:hover,.current6:hover,.current7:hover {
+				background:#fff;
+			}
+footer{
+	position: absolute;
+	box-sizing:border:box;
+	width:100%;
+	height:40px;
+	bottom:0;
+	text-align:center;
+	color: rgba(51,51,51,0.7);
+	font-size:15px;
+	background: #eee;
+}
+footer p {
+	margin:0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1110px) {
+	.main {width: 42%; padding-right:20px; padding-left:20px;}
+	.week {width:57%; padding-left:10px; padding-right:0; height:auto;}
+	.layout {padding-right:0; margin-right:2%; margin-left:2%; width:96%;}
+	h1 {padding-left:2%;}
+	.logo a {right:2%;}
+}
+@media only screen and (max-width:850px) {   /*----main above week----*/
+	.layout {padding: 40px; margin-top: 40px; margin-bottom: 40px;}
+	.main {display: block; width: 100%; height: auto; padding: 40px 40px 40px 40px;}
+	.right {right:40px;}
+	.week {display: block; width: 100%; margin-top: 40px; padding: 0;}
+	.week1 {margin-bottom:1px;}
+	.current0,.current1,.current2,.current3,.current4,.current5,.current6,.current7 {
+		border-right:1px solid #eee; width:25%;}
+}
+@media only screen and (max-width:767px) {
+	.current0,.current1,.current2,.current3,.current4,.current5,.current6,.current7 {
+		margin-right:-5px;}
+}
+@media only screen and (max-width:600px) {
+	.logo a {bottom: 10px; font-size: 12px;}
+	.layout {padding:10px;}
+	h1 {padding-top: 25px;
+		padding-bottom: 35px;}
+	.week {margin-top:10px;}
+	.current0,.current1,.current2,.current3,.current4,.current5,.current6,.current7 {
+		font-size:9px; padding-left:5px;}
+}
+@media only screen and (max-width: 500px) {
+	.main {padding:20px;}
+	.additional {font-size:9px;}
+	.additional0 {margin-top: 55px;}
+	footer {font-size:12px;}
+}
+@media only screen and (max-width: 380px) {
+	.layout {margin-left:0; margin-right:0; width:100%; padding-right:0; padding-left: 0;}
+	#icon {width: 100px; height:100px;}
+	.right {right:10px; margin-top:2px;}
+}

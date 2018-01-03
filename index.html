@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Местный прогноз погоды</title>
+		<base target="_blank"> 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body> 
+	<div class="container">
+		<div class="logo">
+			<h1>прогноз <span>погоды </span></h1> 
+			<a href="https://darksky.net"> powered by Dark Sky Api</a>
+		</div>
+		
+		<div class="layout">
+			<div class="main"> 
+				<h2 id="city"> </h2>
+				<p class="currentDay">ceгодня: </p>
+				<p class="currentDate"> </p>
+				<p class="currentTemperature"> </p>
+				<p class="temperatureMin0"> </p>
+				<p class="temperatureMax0"> </p>
+				<div class="additional0">
+					<div class="additional hum">
+						<p>влажность</p>
+						<p class="humidity0"> </p>
+					</div>
+					<div class="additional cloud">
+						<p>облачность</p>
+						<p class="cloudCover"> </p>
+					</div>
+					<div class="additional wind"> 
+						<p>ветер</p>
+						<p class="windSpeed0"> </p>
+					</div>
+				</div>
+				<div class="right">
+					<canvas id='icon' width="120" height="120"> </canvas>
+					<p class="summary"> </p>
+				</div>
+			</div>
+				
+			<div class="week"> 
+				<div class="week1 row">
+					<div class="current0 col-sm-3"> 
+						<p class="currentDay0"> </p> 
+						<p class="currentDate0"> </p>
+						<canvas id='icon0' width="50" height="50"> </canvas>
+						<p class="temperatureMin0"> </p>
+						<p class="temperatureMax0"> </p>
+					</div>
+					<div class="current1 col-sm-3"> 
+						<p class="currentDay1"> </p> 
+						<p class="currentDate1"> </p>
+						<canvas id='icon1' width="50" height="50"> </canvas>
+						<p class="temperatureMin1"> </p>
+						<p class="temperatureMax1"> </p>
+					</div>
+					<div class="current2 col-sm-3"> 
+						<p class="currentDay2"> </p>
+						<p class="currentDate2"> </p>
+						<canvas id='icon2' width="50" height="50"> </canvas>
+						<p class="temperatureMin2"> </p>
+						<p class="temperatureMax2"> </p>
+					</div>
+					<div class="current3 col-sm-3"> 
+						<p class="currentDay3"> </p>
+						<p class="currentDate3"> </p>
+						<canvas id='icon3' width="50" height="50"> </canvas>
+						<p class="temperatureMin3"> </p>
+						<p class="temperatureMax3"> </p>
+					</div>
+				</div>
+					
+				<div class="week2 row">
+					<div class="current4 col-sm-3"> 
+						<p class="currentDay4"> </p>
+						<p class="currentDate4"> </p>
+						<canvas id='icon4' width="50" height="50"> </canvas>
+						<p class="temperatureMin4"> </p>
+						<p class="temperatureMax4"> </p>
+					</div>
+					<div class="current5 col-sm-3"> 
+						<p class="currentDay5"> </p>
+						<p class="currentDate5"> </p>
+						<canvas id='icon5' width="50" height="50"> </canvas>
+						<p class="temperatureMin5"> </p>
+						<p class="temperatureMax5"> </p>
+					</div>
+					<div class="current6 col-sm-3"> 
+						<p class="currentDay6"> </p>
+						<p class="currentDate6"> </p>
+						<canvas id='icon6' width="50" height="50"> </canvas>
+						<p class="temperatureMin6"> </p>
+						<p class="temperatureMax6"> </p>
+					</div>
+					<div class="current7 col-sm-3"> 
+						<p class="currentDay7"> </p>
+						<p class="currentDate7"> </p>
+						<canvas id='icon7' width="50" height="50"> </canvas>
+						<p class="temperatureMin7"> </p>
+						<p class="temperatureMax7"> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer><p>&copy; 2017 Marina Osadcha</p></footer>
+		</div>
+		
+		<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+	</body>
+</html>
+	
